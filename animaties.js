@@ -14,4 +14,6 @@ menuKnop.addEventListener("click", () => {
       item.classList.toggle("nav__link--schuif-in");
     }, 30 * index);
   });
+  document.querySelector(".fa-bars").classList.toggle("verberg");
+  document.querySelector(".fa-times").classList.toggle("verberg");
 });

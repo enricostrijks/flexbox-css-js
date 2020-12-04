@@ -23,15 +23,6 @@ nav {
   width: 2.7em;
 }
 
-.nav__knop:hover {
-  color: white;
-  background-color: blue;
-}
-.nav__item {
-  margin-bottom: 0.1em;
-  margin-top: 0.4em;
-}
-
 .nav__link {
   color: red;
   color: orange;
@@ -64,4 +55,26 @@ nav {
 }
 .animeer-knop {
   height: 1.5em;
+}
+.fas.verberg {
+  display: none;
+}
+@media screen and (min-width: 710px) {
+  .nav {
+    flex-direction: row;
+    width: 100vw;
+  }
+
+  .nav__item {
+    margin-left: 0.1em;
+    flex: 1 0 auto;
+  }
+
+  .nav__link {
+    transform: translateY(-2em);
+  }
+
+  .nav__link--schuif-in {
+    transform: translateY(0);
+  }
 }
