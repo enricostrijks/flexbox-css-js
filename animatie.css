@@ -12,19 +12,55 @@ main {
   align-items: center;
   overflow-x: hidden;
 }
+nav {
+  position: fixed;
+}
+
+.nav__knop {
+  padding: 0.5em;
+  box-sizing: border-box;
+  background-color: slateblue;
+  width: 2.7em;
+}
+
+.nav__knop:hover {
+  color: white;
+  background-color: blue;
+}
+.nav__item {
+  margin-bottom: 0.1em;
+  margin-top: 0.4em;
+}
+
+.nav__link {
+  color: red;
+  color: orange;
+  background-color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.2em 0.8em;
+  transform: translateX(-10.6em);
+  transition: transform 0.8s ease-in-out;
+}
+.nav__link:hover {
+  color: white;
+  background-color: blue;
+}
+.nav__link--schuif-in {
+  transform: translateX(0em);
+}
 .vlakje {
   width: 15vw;
   height: 15vw;
   transform: translateX(2em);
   transition: transform 1s cubic-bezier(0.1, 0, 0.22, 0.91);
 }
-
 .vlakje img {
   width: 15vw;
   height: 15vw;
 }
 .vlakje__naar-rechts {
-  transform: translateX(60vw) rotate(90deg);
+  transform: translateX(60vw) rotate(720deg);
 }
 .animeer-knop {
   height: 1.5em;
