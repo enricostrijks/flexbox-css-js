@@ -14,8 +14,11 @@ main {
 }
 nav {
   position: fixed;
+  display: flex;
 }
-
+ul {
+  list-style-type: none;
+}
 .nav__knop {
   padding: 0.5em;
   box-sizing: border-box;
@@ -59,8 +62,27 @@ nav {
 .fas.verberg {
   display: none;
 }
+.nav__link--schuif-in .nav__tekst {
+  animation: ijl-na 1s forwards;
+}
+
+@keyframes ijl-na {
+  0% {
+    transform: rotateX(-2em);
+  }
+  50% {
+    transform: rotateX(0.8em);
+  }
+  75% {
+    transform: rotateX(-0.4em);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
 @media screen and (min-width: 710px) {
   .nav {
+    display: flex;
     flex-direction: row;
     width: 100vw;
   }
@@ -71,10 +93,28 @@ nav {
   }
 
   .nav__link {
-    transform: translateY(-2em);
+    transform: translateY(-3em);
   }
 
   .nav__link--schuif-in {
     transform: translateY(0);
+  }
+  .nav__link--schuif-in-vert .nav__tekst {
+    animation: ijl-na 2s forwards;
+  }
+
+  @keyframes ijl-na-vert {
+    0% {
+      transform: rotateX(-2em);
+    }
+    50% {
+      transform: rotateX(0.1em);
+    }
+    75% {
+      transform: rotateX(-0.05em);
+    }
+    100% {
+      transform: rotateX(0);
+    }
   }
 }
