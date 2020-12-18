@@ -18,22 +18,27 @@ nav {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  margin-top: -0.3em;
+  padding-inline-start: 0;
 }
 .nav__knop {
-  padding: 0.5em;
+  padding: 1em;
   box-sizing: border-box;
-  background-color: slateblue;
+  background-color: royalblue;
   width: 2.7em;
 }
 
 .nav__link {
   color: red;
-  color: orange;
+  color: black;
+  font-weight: 600;
   background-color: white;
   text-decoration: none;
   display: block;
-  padding: 0.2em 0.8em;
-  transform: translateX(-10.6em);
+  padding: 1em 0.7em;
+  bottom: 2em;
+  transform: translateX(-12.6em);
   transition: transform 0.8s ease-in-out;
 }
 .nav__link:hover {
@@ -68,16 +73,16 @@ ul {
 
 @keyframes ijl-na {
   0% {
-    transform: rotateX(-2em);
+    transform: translateX(-2em);
   }
   50% {
-    transform: rotateX(0.8em);
+    transform: translateX(0.8em);
   }
   75% {
-    transform: rotateX(-0.4em);
+    transform: translateX(-0.4em);
   }
   100% {
-    transform: rotateX(0);
+    transform: translateX(0);
   }
 }
 @media screen and (min-width: 710px) {
